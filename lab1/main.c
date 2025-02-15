@@ -11,15 +11,20 @@
 
 int main(int argc, char *argv[]) {
 	double a,b,c;
-	a = 1;
-	b = -6;
-	c = 9;
-
+	printf("vvedite a:\n");
+	scanf("%lf", &a);
+	
+	printf("vvedite b:\n");
+	scanf("%lf", &b);
+	
+	printf("vvedite c:\n");
+	scanf("%lf", &c);
+	
 	double x1,x2,d;
 	d = pow(b,2) - 4*a*c;
 	
 	
-	if (d < 0) printf('kornei net');
+	if (d < 0) printf("kornei net");
 	if (d == 0) {
 		x1 = (-b)/(2*a);
 		printf("only one root x = %lf\n", x1);
