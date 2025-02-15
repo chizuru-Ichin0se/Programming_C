@@ -1,45 +1,44 @@
-	#include <stdio.h>
+#include <stdio.h>
 #include <stdlib.h>
 #include <math.h>
 
-/* Объявить вещественные переменные a, b и с и задать их значения. Предполагая, что a, b, c есть коэффициенты квадратного уравнения вывести на консоль значения их кор-ней х1, х2.
- Следует подобрать такие значения коэффициентов, при которых корни бу-дут существовать.
-	Примечание. Для выполнения задания потребуется функции вычисления квад-ратного корня (возведение в степень), а так же вывод данных на консоль.
-	Возведение в степень - подключаем заголовочный файл	 math.h и исполь-зуем функцию pow, первым параметром которого должен быть возводимое значение, а вторым - степень, тип данных double.
-	Вывод данных - заголовочный файл stdio.h, функция printf, первым параметром является форматная строка, а последующие - переменные, значения которых необхо-димо вывести.
- */
+
 
 int main(int argc, char *argv[]) {
 	double a,b,c;
-	printf("vvedite a:\n");
-	scanf("%lf", &a);
-	
-	printf("vvedite b:\n");
-	scanf("%lf", &b);
-	
-	printf("vvedite c:\n");
-	scanf("%lf", &c);
-	
 	double x1,x2,d;
-	d = pow(b,2) - 4*a*c;
 	
 	
-	if (d < 0) printf("kornei net");
-	if (d == 0) {
-		x1 = (-b)/(2*a);
-		printf("only one root x = %lf\n", x1);
-	}	
-	if (d > 0) {
+	while (1){
+		printf("vvedite a:\n");
+		scanf("%lf", &a);
+	
+		printf("vvedite b:\n");
+		scanf("%lf", &b);
+	
+		printf("vvedite c:\n");
+		scanf("%lf", &c);
+	
+	
+		d = pow(b,2) - 4*a*c;
+	
+		if (d < 0) printf("kornei net\n");
+		if (d == 0) {
+			x1 = (-b)/(2*a);
+			printf("only one root x = %lf\n", x1);
+		}	
+		if (d > 0) {
 	
 		
 		
-		x1 = (-b - sqrt(d))/(2*a);
-		x2 = (-b + sqrt(d))/(2*a);
+			x1 = (-b - sqrt(d))/(2*a);
+			x2 = (-b + sqrt(d))/(2*a);
 		
-		printf("x1 = %lf\n", x1);
-		printf("x2 = %lf\n", x2);
-		printf("d = %lf\n", d);
+			printf("x1 = %lf\n", x1);
+			printf("x2 = %lf\n", x2);
+			printf("d = %lf\n", d);
 	
+		}
 	}
 	
 	
