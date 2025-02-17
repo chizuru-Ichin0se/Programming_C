@@ -16,13 +16,13 @@ int main() {
     }
   }
   
-  int kvmatrix[n][n] = {0};
+  int zeromatrix[n][n] = {0};
   
   int k;
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
       for (k = 0; k < n; k++) {
-        kvmatrix[n][n] += matrix[i][k] * matrix[k][j];
+        zeromatrix[i][j] += matrix[i][k] * matrix[k][j];
       }
     }
   }
@@ -30,11 +30,10 @@ int main() {
   printf("Kvadrat\n");
   for (i = 0; i < n; i++) {
     for (j = 0; j < n; j++) {
-      printf("%d ", kvmatrix[i][j]);
+      printf("%d ", zeromatrix[i][j]);
     }
     printf("\n");
   }
   
   return 0;
 }
-
