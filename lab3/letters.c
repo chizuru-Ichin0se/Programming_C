@@ -1,7 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
 
-
 int main() {  
   char str[81];
   printf("do 80 simvolov: ");
@@ -15,7 +14,6 @@ int main() {
       str[i] = 'B';
     }
   }
-  
   
   printf("vivod: %s", str);
   
