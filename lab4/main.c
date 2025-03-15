@@ -1,4 +1,4 @@
-#include <stdbool>
+#include <stdbool.h>
 #include <stdio.h>
 #include <stdlib.h>
 
@@ -11,14 +11,14 @@ int main(int argc, char** argv) {
   double a, b, c;
   printf("Enter 3 sides:\n")
   
-  if (scanf("%lf %lf %lf, &a, &b, &c") != 3) {
+  if (scanf("%lf %lf %lf", &a, &b, &c) != 3) {
     printf ("ERROR: not 3 sides entered\n");
     return 1;
   }
   
   if (test_error(a,b,c)) {
     double perimeter = a + b + c
-    double area = 
+    double area = sqrt((perimetr/2) * ((perimetr/2) - a) * ((perimetr/2) - b) * ((perimetr/2) - c))
     printf("Perimeter: %.2f\n", perimeter)
     printf("Area: %.2f\n", area)
   }
