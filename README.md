@@ -26,4 +26,12 @@
 | [8](./labs/lab8)   | ✅ Сдана| [16](./labs/lab16)  | ✅ Сдана |
 
 ---
+### 🎓 Обучение:
+*   10.02.2025 - 14.06.2025 Можаровский Игорь Сергеевич(кандидат технических наук) | Програмирование на С
+---
+### 🎓 Пройденные курсы и лекции:
+*   **YouTube:** [Курс молодого бойца МФТИ (Язык Си)](https://www.youtube.com/watch?v=S6HzukfU0Lw&list=PLRDzFCPr95fLjzcv6nNdjMu_9RcZgIM9U&pp=0gcJCVgDOCosWNin)
 
+---
+### 🏆 Практика на Stepik:
+*   [Название курса на Stepik](https://stepik.org/course/ССЫЛКА)
